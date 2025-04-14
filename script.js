@@ -35,7 +35,7 @@ function updateUI() {
 
 function announceWinner(player) {
   const messageElement = document.getElementById('gameMessage');
-  messageElement.innerText = `Player ${player} Wins!`;
+  messageElement.innerText = `Игрок ${player} выиграл!`;
 }
 
 function announceDraw() {
