@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    background: linear-gradient(to right, #7549c7, #ACB6E5);
     color: #333;
   }
   
@@ -37,8 +37,9 @@ body {
   .game-message {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 20px;
-    color: #333;
+    color: #000000;
   }
   
   #resetButton {
