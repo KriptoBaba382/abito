@@ -1,92 +1,57 @@
-* {
-    box-sizing: border-box; 
-}
-
 body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    font-family: sans-serif;
-}
- 
-.container {
-    width: 100%;
-    max-width: 1170px;
-    padding: 0 12px;
-    margin: 0 auto;
-}
-
-.btn {
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 10px 15px;
-    border-radius: 5px;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    color: #333;
+  }
+  
+  #tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .cell {
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .cell:hover {
+    background-color: #e3e3e3;
+  }
+  
+  .game-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  #resetButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
     border: none;
     cursor: pointer;
-    }
-
-.btn-outline {
-    background-color: transparent;
-
-}
-
-.btn-primary {
-    background-color: rgb(37, 110, 235);
-    color: white;
-
-}
-
-.header {
-    padding-top: 30px;
-    padding-bottom: 24px;
-}
-
-.header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo {
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.header-logo span {
-    line-height: 28px;
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 6px;
-}
-
-.header-burger {
-    width: 30px;
-    height: 19px;
-    display: none;
-}
-
-@media screen and (max-width:1200px) {
-    .container {
-        max-width: 930px;
-    }
-}
-@media screen and (max-width:991px) {
-    .container {
-        max-width: 730px;
-    }
-}
-@media screen and (max-width:786px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .header-burger {
-        display: block;
-    }
-
-    .header-controls {
-        display: none;
-    }
-
-    
-}
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #resetButton:hover {
+    background-color: #555;
+  }

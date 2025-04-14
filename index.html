@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Abito</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-box">
-                <div class="header-logo">
-                    <img src="./image/Logo.svg" alt="Logo">
-                    <span>Abito</span>
-                </div>
-                <div class="header-controls">
-                    <button class="btn btn-outline">Вход и регистрация</button>
-                    <button class="btn btn-primary">Подать объявление</button>
-                </div>
-                <div class="header-burger">
-                    <img src="./image/Burger.svg" alt="Burger">
-                </div>
-            </div>
-        </div>
-    </header>
-    <div>Search</div>
-    <main>content</main>
+  <div id="tic-tac-toe-board">
+      <div class="row">
+          <div class="cell" id="cell-1"></div>
+          <div class="cell" id="cell-2"></div>
+          <div class="cell" id="cell-3"></div>
+      </div>
+      <div class="row">
+          <div class="cell" id="cell-4"></div>
+          <div class="cell" id="cell-5"></div>
+          <div class="cell" id="cell-6"></div>
+      </div>
+      <div class="row">
+          <div class="cell" id="cell-7"></div>
+          <div class="cell" id="cell-8"></div>
+          <div class="cell" id="cell-9"></div>
+      </div>
+  </div>
+  <div id="gameMessage" class="game-message"></div>
+  <button id="resetButton">Reset Game</button>  
+  <script src="script.js"></script>
 </body>
-
 </html>
