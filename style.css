@@ -1,5 +1,8 @@
 .header {
-
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin-left: 150px;
 }
 .conteiner {
   display: flex;

@@ -1,12 +1,5 @@
-let currentPlayer = 'X';
-let gameBoard = ['', '', '', '', '', '', '', '', ''];
-let gameActive = true;
+var a = 1
+let b = 2
+const c = 3
 
-function handlePlayerTurn(clickedCellIndex) {
-  if (gameBoard[clickedCellIndex] !== '' || !gameActive) {
-      return;
-  }
-  gameBoard[clickedCellIndex] = currentPlayer;
-  checkForWinOrDraw();
-  currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-}
+console.log(a)
