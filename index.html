@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Abito</title>
 </head>
+
 <body>
-  <div class="header">
-    <div class="conteiner">
-    <img src="/image/Logo.svg" alt="Logo" height="27" width="27">
-    <h1> Abito </h1>
-  </div>
-<div class="form"> Вход и регистрация</div>
-<div class="button annoucemen"> Подать объявление</div>
-  </div>
-  <div class="search">
+  <header class="header">
+    <div class="container">
+      <div class="header-box">
+        <div class="header-logo"><img src="image/Logo.svg" alt="logo" width="28" height="28">
+          <span>Abito</span>
+        </div>
+        <div class="header-controls">
+          <button class="btn btn-outline">Вход и регистрация</button>
+          <button class="btn btn-primary">Подать объявление</button>
+        </div>
+        <div class="header-burger">
+          <img src="image/Burger.svg" alt="Burger">
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="Search">
+<div class="container">
+<div class="search-box">
+  <input type="text">
+  <button class="btn btn-primary search-btn">
+    <img class="search-btn__icon" src="image/lupa.svg" alt="">
+    <span class="search-btn__text">Найти</span></button>
 </div>
-  <div class="content"></div>
+</div>
+    </section>
+    <section class="content">
+      <div class="container">
+        content
+      </div>
+          </section>
+  </main>
 </body>
+
 </html>
